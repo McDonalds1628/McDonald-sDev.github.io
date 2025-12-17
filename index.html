@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roovek Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/icone.webp" alt="Roovek">
+        <h1>Roovek</h1>
+    </div>
+    <nav>
+        <a href="#about"><i class="bi bi-person-circle"></i> Sobre</a>
+        <a href="#portfolio"><i class="bi bi-card-image"></i> Portfólio</a>
+        <a href="#skills"><i class="bi bi-tools"></i> Habilidades</a>
+        <a href="#contact"><i class="bi bi-telephone"></i> Contato</a>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="hero-background">
+        <img src="images/hero-sections.png" alt="Hero Background">
+    </div>
+    <div class="hero-content animate__animated animate__fadeInDown">
+        <h2><i class="bi bi-joystick"></i> Roovek - Roblox Dev & 3D Artist</h2>
+        <p>14 anos, modelando 3D há 3 meses, criando experiências incríveis no Roblox Studio.</p>
+        <p>Roblox: <strong>Roovek</strong></p>
+        <a href="#portfolio" class="btn-hero animate__animated animate__pulse animate__infinite">Ver Portfólio</a>
+    </div>
+</section>
+
+<section id="about" data-aos="fade-up">
+    <h2>Minha Jornada <i class="bi bi-lightning-charge-fill"></i></h2>
+    <p>Sou um jovem dev e modelador 3D. Em apenas 3 meses, já desenvolvi diversos modelos e experiências no Roblox Studio. Cada projeto é feito com cuidado, atenção aos detalhes e estética moderna. Estou sempre aprendendo a programar scripts em Lua e melhorando minhas habilidades.</p>
+</section>
+
+<section id="skills" data-aos="fade-up">
+    <h2>Habilidades <i class="bi bi-tools"></i></h2>
+    <div class="skills-grid">
+        <div class="skill-card" data-aos="zoom-in">
+            <i class="bi bi-brush"></i>
+            <h3>Blender 3D</h3>
+            <p>Modelagem e texturização de objetos e personagens.</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="bi bi-joystick"></i>
+            <h3>Roblox Studio</h3>
+            <p>Criação de jogos e experiências interativas.</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+            <i class="bi bi-code-slash"></i>
+            <h3>Scripting</h3>
+            <p>Aprendendo a programar scripts em Lua para Roblox.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" data-aos="fade-up">
+    <h2>Portfólio <i class="bi bi-card-image"></i></h2>
+    <div class="cards">
+        <div class="card" data-aos="fade-up">
+            <img src="images/model1.webp" alt="Model 1">
+            <p><i class="bi bi-robot"></i> Model 1</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/model2.webp" alt="Model 2">
+            <p><i class="bi bi-robot"></i> Model 2</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/model3.webp" alt="Model 3">
+            <p><i class="bi bi-robot"></i> Model 3</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/model4.webp" alt="Model 4">
+            <p><i class="bi bi-robot"></i> Model 4</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+    <h2>Contato & Pagamento <i class="bi bi-currency-dollar"></i></h2>
+    <p>Discord: <strong><i class="bi bi-discord"></i> mcdonaldsdev</strong></p>
+    <p>Preço: 27 reais/hora <i class="bi bi-cash"></i> ou 240 robux/hora <img src="images/robux.png" alt="Robux" class="robux-icon"></p>
+    <p>Formas de pagamento aceitas: PIX <i class="bi bi-credit-card-2-front"></i> e Robux <img src="images/robux.png" class="robux-icon"></p>
+</section>
+
+<footer>
+    <p>© 2025 Roovek <i class="bi bi-heart-fill"></i></p>
+</footer>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="caption"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>
